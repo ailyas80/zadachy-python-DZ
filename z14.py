@@ -4,9 +4,7 @@
 #     N = N * 10   # N = round(N * 10, 3)
 # N = N // 10
 # print(N)
-# str_lst = ['1', '2', '3']
-# int_lst = [int(x) for x in str_lst]
-# print (int_lst)
+
 
 N = str(input("Введите число: "))
 sum = 0
