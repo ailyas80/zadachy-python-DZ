@@ -12,11 +12,9 @@ list = []
 for i in N:
     if i != '.':
         list.append(i)
-print(list)
-int_lst = [int(x) for x in list]
-print(int_lst[1])
+int_lst = [int(i) for i in list]
 for i in int_lst:
-    sum = sum + i
+    sum += i
 print(sum)
 
 
