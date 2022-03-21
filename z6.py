@@ -1,12 +1,14 @@
 # Дано число обозначающее день недели.
 # Вывести его название и указать является ли он выходным.
 def weekend(some_number):
-    return some_number == 5 or some_number == 6
+    weekdays = ['Понедельник', 'Вторник', 'Среда',
+                'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+    if some_number < 0 or some_number > 8:
+        return 'не корректный ввод'
+    if some_number == 6 or some_number == 7:
+     return weekdays[some_number-1] + ' Выходной день'
+    else:
+        return weekdays[some_number-1] + ' Рабочий день'
 
-
-number = int(input("введите число от 0 до 6: "))
-weekdays = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
-if weekend(number) == True:
-    print(weekdays[number], '- Выходной день')
-else:
-    print(weekdays[number], '- рабочий день')
+N = int(input('Введите день недели: '))
+print(weekend(N))
