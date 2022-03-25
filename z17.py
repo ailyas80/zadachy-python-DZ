@@ -17,7 +17,9 @@ while x <= N:
     
 print(list)
 print(list2)
-
+data = open('file.txt', 'a')
+data.writelines(list2)
+data.close()
     
 
 
