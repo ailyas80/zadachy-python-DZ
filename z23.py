@@ -5,17 +5,17 @@ def MultPair(listMultPair):
     listAdd = []
     if (len(listMultPair) % 2 == 0):
         for i in range(0, len(listMultPair)//2):
-            print(len(listMultPair))
+            # print(len(listMultPair))
             listAdd.append(listMultPair[i] * listMultPair[-1-i])
     else:
         for i in range(0, (len(listMultPair)+1)//2):
-            print(len(listMultPair))
+            # print(len(listMultPair))
             listAdd.append(listMultPair[i] * listMultPair[-1-i])
     return listAdd
 
 
 list1 = [2, 3, 4, 5, 6]
-list2 = [2, 3, 4, 5, 6, 7]
+list2 = [2, 3, 5, 6]
 print(MultPair(list1))
 print(MultPair(list2))
 
