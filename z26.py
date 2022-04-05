@@ -41,9 +41,10 @@ def antifib(n):
         fib1 = fib2
         fib2 = fib_sum
         fib.append(fib_sum)
-        fib.reverse
+        # fib.reverse
         i += 1
-    return fib
+    fibs = reversed(fib)
+    return fibs
 
 W = input("Введите число: ")
 W = int(W)
