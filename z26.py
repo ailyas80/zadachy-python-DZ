@@ -43,13 +43,14 @@ def antifib(n):
         fib.append(fib_sum)
         # fib.reverse
         i += 1
-    fibs = reversed(fib)
-    return fibs
+    # fibs = reversed(fib)
+    return fib
 
 W = input("Введите число: ")
 W = int(W)
 
 print(antifib(W) + fibonachi(W))
+
 
 
 
