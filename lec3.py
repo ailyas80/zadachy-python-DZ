@@ -7,9 +7,9 @@ def negafib(n):
     else: 
         return negafib(n-1)+negafib(n-2) 
 
- 
 n = int(input('Введите число n = ')) 
 list = [] 
+
 print(negafib(n))
 for i in range(-n,n+1): 
     list.append(negafib(i)) 
