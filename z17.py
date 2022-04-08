@@ -17,8 +17,8 @@ while x <= N:
     
 print(list)
 print(list2)
-data = open('file.txt', 'a')
-data.writelines(list2)
+data = open('file.txt', 'w')
+data.writelines("%s\n" % i for i in list2)
 data.close()
     
 
