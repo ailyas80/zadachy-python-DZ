@@ -3,7 +3,7 @@
 def weekend(some_number):
     weekdays = ['Понедельник', 'Вторник', 'Среда',
                 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
-    if some_number < 0 or some_number > 8:
+    if some_number <= 0 or some_number >= 8:
         return 'не корректный ввод'
     if some_number == 6 or some_number == 7:
      return weekdays[some_number-1] + ' Выходной день'
