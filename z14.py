@@ -24,13 +24,16 @@
 #         sum += num % 10
 #         num //= 10
 #     return sum
-
+# N = int(input('введите число '))
 # print(sum_of_digits(N))
 
 N = str(input("Введите число: "))
-sum = 0
-number = list(N)
-number.remove('.')
-for i in number:
-    sum += int(i)
+if N.isnumeric():
+    print("значение не является вещественным числом")
+else:
+    sum = 0
+    number = list(N)
+    number.remove('.')
+    for i in number:
+     sum += int(i)
 print(sum)
