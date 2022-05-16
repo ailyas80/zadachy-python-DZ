@@ -13,8 +13,6 @@ while x <= N:
     x += 1
     list2.append(a)
     y += 1  
-    
-    
 print(list)
 print(list2)
 data = open('file.txt', 'w')
