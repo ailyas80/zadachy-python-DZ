@@ -11,4 +11,4 @@ else:
     for i in range(N-1):
         tmp *= -3
         list1.append(tmp)
-print(list1)
+print(f'N = {N}: {list1}')
