@@ -8,4 +8,4 @@ for i in float_spisok:
     if i !=0:
      new_float_spisok.append(i)
 print(new_float_spisok)
-print(max(new_float_spisok)- min(new_float_spisok))
+print(f'{max(new_float_spisok)}- {min(new_float_spisok)} =  {max(new_float_spisok) - min(new_float_spisok)}')
