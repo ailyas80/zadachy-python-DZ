@@ -5,9 +5,9 @@
 # print(res)
 
 
-users = ['user1', 'user2', 'user3', 'user4', 'user5']
-data = list(enumerate(users))
-print(data)
+# users = ['user1', 'user2', 'user3', 'user4', 'user5']
+# data = list(enumerate(users))
+# print(data)
 
 
 
@@ -25,3 +25,16 @@ print(data)
 # file2.close()
 # list = [(i, f(i)) for i in data2 if i % 2 == 0]
 # print(list)
+
+
+# def is_number(str):
+#     try:
+#         float(str)
+#         return 'вещественное число'
+#     except ValueError:
+#         return 'не корректный ввод'
+
+# a = str(input('введите число '))
+# print(is_number(a))
+s= input('введите число ')
+print(s.isnumeric())
